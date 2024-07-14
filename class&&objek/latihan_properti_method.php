@@ -9,7 +9,7 @@ class Produk{
         
         // 'this' adalah keyword yang digunakan untuk merujuk pada objek saat ini dari kelas tempat 'this' digunakan.
         // Dalam konteks ini, 'this' merujuk pada objek dari kelas Produk yang memanggil metode cekNama.
-        return "nama produk: " . $this->nama;
+        return "nama produk: " . $this->nama . "<br>" . "harga produk: ". $this->harga;
     }
 
 }
@@ -47,11 +47,15 @@ $produksi3->harga = 120000;
 $produksi3->merk = "acer";
 
 
+echo "<br>";
 
 // pemanggilan public function
 
 echo $produksi3->cekNama();
 
+echo "<br>";
+echo "<br>";
 
+echo $produksi->cekNama();
 
 ?>
